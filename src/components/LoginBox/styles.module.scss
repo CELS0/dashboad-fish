@@ -1,0 +1,73 @@
+.loginBoxWrapper {
+    height: 100vh;
+    width: 100%;
+    background: #ffff url(../../assets/LogoSignIn.png) no-repeat center top;
+    padding: 10vw 5vw 0;
+    /* Usando unidades vw para tornar o padding responsivo */
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    strong {
+        font-size: 7vw;
+        line-height: 6.6vw;
+        color: #8bc43f;
+        margin-top: 72vw;
+        width: 61vw;
+
+    }
+
+    .signInWithGithub {
+        margin-top: 10vw;
+        /* Usando unidade vw para tornar a margem responsiva */
+        padding: 0 10vw;
+        /* Usando unidades vw para tornar o padding responsivo */
+        height: 8vw;
+        /* Usando unidade vw para tornar a altura responsiva */
+        color: #09090a;
+        font-size: 1.4vw;
+        /* Usando unidade vw para tornar o tamanho da fonte responsivo */
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            margin-right: 1.6vw;
+            /* Usando unidade vw para tornar a margem responsiva */
+        }
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+}
+
+/* Media queries para ajustar o layout em diferentes tamanhos de tela */
+@media screen and (max-width: 600px) {
+    .loginBoxWrapper {
+        padding: 20px;
+    }
+
+    strong {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .signInWithGithub {
+        padding: 20px;
+        height: 40px;
+        font-size: 12px;
+
+        svg {
+            margin-right: 8px;
+        }
+    }
+}
+
+/* Adicione mais media queries conforme necessário para outras resoluções */

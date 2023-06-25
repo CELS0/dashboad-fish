@@ -1,0 +1,45 @@
+.contentWrapper {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+  
+    display: grid;
+    grid-template-columns: 1fr 453px;
+    column-gap: 120px;
+    position: relative;
+    background: linear-gradient(to bottom, #cff4fc, #ffff);
+  }
+  
+  .contentSigned::before {
+    content: '';
+    height: 100vh;
+    width: 420px;
+    background: url('./assets//background.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -200px;
+    top: 0;
+  }
+  
+  /* Media queries para ajustar o layout em diferentes tamanhos de tela */
+  @media screen and (max-width: 1200px) {
+    .contentWrapper {
+      max-width: 100%;
+      padding: 0 20px;
+      column-gap: 60px;
+    }
+  
+    .contentSigned::before {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contentWrapper {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+    }
+  }
+  
+  /* Adicione mais media queries conforme necessário para outras resoluções */
+  

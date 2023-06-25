@@ -1,0 +1,32 @@
+.verification-code-container {
+    display: flex;
+  }
+  
+  .verification-code-input {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    border: 1.5px solid #03b0cf;
+    border-radius: 4px;
+  }
+  
+  /* Media queries para ajustar o layout em diferentes tamanhos de tela */
+  @media screen and (max-width: 600px) {
+    .verification-code-container {
+      flex-wrap: wrap; /* Quebrar os elementos em várias linhas */
+    }
+  
+    .verification-code-input {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+  
+  /* Adicione mais media queries conforme necessário para outras resoluções */
+  
